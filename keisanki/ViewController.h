@@ -8,6 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    IBOutlet UILabel *label;
+    BOOL startInput;
+    double currentValue;
+    double operation;
+    
+}
+
+
+
+- (IBAction)clearButton:(id)sender;
+- (IBAction)numberButton:(id)sender;
+- (IBAction)equalButton:(id)sender;
+- (IBAction)calcButton:(id)sender;
+
 
 @end
